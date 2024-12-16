@@ -223,10 +223,10 @@ TextureImporter:
         serializedVersion: 2
         x: 23
         y: 213
-        width: 19
-        height: 20
+        width: 23
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -240,59 +240,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime3_Idle_full_1
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 231
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 00600b5def2afd690800000000000000
-      internalID: -7575156832823409152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Idle_full_2
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 227
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea63d7a2881b64200800000000000000
-      internalID: 164013634832119470
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Slime3_Idle_full_3
       rect:
         serializedVersion: 2
         x: 87
         y: 213
-        width: 19
-        height: 23
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -306,28 +262,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime3_Idle_full_4
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 230
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63d8c8aa9c0383570800000000000000
-      internalID: 8446554743841262902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Slime3_Idle_full_5
       rect:
         serializedVersion: 2
@@ -336,7 +270,7 @@ TextureImporter:
         width: 21
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -358,7 +292,7 @@ TextureImporter:
         width: 21
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -380,7 +314,7 @@ TextureImporter:
         width: 21
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -402,7 +336,7 @@ TextureImporter:
         width: 20
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -424,7 +358,7 @@ TextureImporter:
         width: 6
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -446,7 +380,7 @@ TextureImporter:
         width: 19
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -468,7 +402,7 @@ TextureImporter:
         width: 8
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -490,7 +424,7 @@ TextureImporter:
         width: 21
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -512,7 +446,7 @@ TextureImporter:
         width: 7
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -534,7 +468,7 @@ TextureImporter:
         width: 21
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -556,7 +490,7 @@ TextureImporter:
         width: 21
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -578,7 +512,7 @@ TextureImporter:
         width: 21
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -600,7 +534,7 @@ TextureImporter:
         width: 20
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -622,7 +556,7 @@ TextureImporter:
         width: 19
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -644,7 +578,7 @@ TextureImporter:
         width: 8
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -666,7 +600,7 @@ TextureImporter:
         width: 6
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -688,7 +622,7 @@ TextureImporter:
         width: 19
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -710,7 +644,7 @@ TextureImporter:
         width: 10
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -732,7 +666,7 @@ TextureImporter:
         width: 21
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -754,7 +688,7 @@ TextureImporter:
         width: 21
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -776,7 +710,7 @@ TextureImporter:
         width: 21
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -798,7 +732,7 @@ TextureImporter:
         width: 20
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -820,7 +754,7 @@ TextureImporter:
         width: 6
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -842,7 +776,7 @@ TextureImporter:
         width: 19
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -864,7 +798,7 @@ TextureImporter:
         width: 8
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -886,7 +820,7 @@ TextureImporter:
         width: 21
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -908,7 +842,7 @@ TextureImporter:
         width: 7
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -930,7 +864,7 @@ TextureImporter:
         width: 21
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -952,7 +886,7 @@ TextureImporter:
         width: 21
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -974,7 +908,7 @@ TextureImporter:
         width: 21
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -996,7 +930,7 @@ TextureImporter:
         width: 20
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1013,7 +947,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 94b2421c61a1df848817868c47ba3eac
     internalID: 0
     vertices: []
     indices: 
@@ -1022,7 +956,40 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Slime3_Idle_full_0: 3726720421939613768
+      Slime3_Idle_full_10: -8884765349071741268
+      Slime3_Idle_full_11: 683361487828634583
+      Slime3_Idle_full_12: 360137151652635274
+      Slime3_Idle_full_13: 2517562639476491599
+      Slime3_Idle_full_14: 7243589310175137723
+      Slime3_Idle_full_15: -4723717024443856536
+      Slime3_Idle_full_16: 5687990843098327800
+      Slime3_Idle_full_17: 1255641073154761191
+      Slime3_Idle_full_18: -2086738899618467211
+      Slime3_Idle_full_19: -454426866862880209
+      Slime3_Idle_full_20: 3019139615600551326
+      Slime3_Idle_full_21: -8753376585281449174
+      Slime3_Idle_full_22: 8157100411731104415
+      Slime3_Idle_full_23: -3206739749510577932
+      Slime3_Idle_full_24: -8965178840228210792
+      Slime3_Idle_full_25: 1137372503337524250
+      Slime3_Idle_full_26: 5246151976994369184
+      Slime3_Idle_full_27: -2059954066771330483
+      Slime3_Idle_full_28: 2839058565501314569
+      Slime3_Idle_full_29: -5217075800699160287
+      Slime3_Idle_full_3: -8669039094995748535
+      Slime3_Idle_full_30: -8938378450963772742
+      Slime3_Idle_full_31: -7649595893143005296
+      Slime3_Idle_full_32: 613971652737736044
+      Slime3_Idle_full_33: -8624682702324374724
+      Slime3_Idle_full_34: -67521228392698149
+      Slime3_Idle_full_35: 8592408314140818728
+      Slime3_Idle_full_5: 8173544964245154972
+      Slime3_Idle_full_6: 1047303386538610249
+      Slime3_Idle_full_7: 6246904074165524361
+      Slime3_Idle_full_8: -5583655484898428775
+      Slime3_Idle_full_9: 8670882997968458962
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

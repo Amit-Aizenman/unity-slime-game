@@ -1,17 +1,26 @@
+using System;
 using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
     [SerializeField] int initialHealth = 100;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private void OnEnable()
     {
-        
+        GameEvents.OnEnemyHit += EnemyHit;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        GameEvents.OnEnemyHit -= EnemyHit;
+    }
+    
+    private void EnemyHit(int damage)
+    {
+        initialHealth -= damage;
+        if (initialHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -1,16 +1,18 @@
+using System;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private int damage = 30;
+    [SerializeField] private int hitsToDeath = 2;
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.tag == "Player") {
+            GameEvents.OnEnemyHit?.Invoke(damage);
+        }
+        hitsToDeath--;
+        if (hitsToDeath == 0) {
+            Destroy(gameObject);
+        }
     }
 }

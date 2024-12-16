@@ -32,12 +32,4 @@ public class CharacterMovement : MonoBehaviour
             _rigidbody2D.AddForce(Vector2.up * (_verticalMovement * Time.fixedDeltaTime * force));
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            
-        }
-    }
 }

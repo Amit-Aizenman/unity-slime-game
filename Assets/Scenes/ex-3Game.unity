@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2146b7bf76779d54f8a7ba1e94896f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 30
+  damage: 50
   hitsToDeath: 2
 --- !u!1 &330655587
 GameObject:
@@ -3201,6 +3201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialHealth: 100
+  animator: {fileID: 0}
 --- !u!1 &1424836421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3910,6 +3911,10 @@ PrefabInstance:
     - target: {fileID: 3093056061570879233, guid: 5adcf7b665d56384fb63519353c07b36, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093056061570879233, guid: 5adcf7b665d56384fb63519353c07b36, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3391337547134594000, guid: 5adcf7b665d56384fb63519353c07b36, type: 3}
       propertyPath: m_Simulated

@@ -30,4 +30,20 @@ public class EnemyMovement : MonoBehaviour
             Destroy(gameObject, 0.75f);
         }
     }
+    
+    private void OnEnable()
+    {
+        GameEvents.DestroyEnemies += DestroyEnemy;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.DestroyEnemies -= DestroyEnemy;
+    }
+
+    private void DestroyEnemy(bool obj)
+    {
+        _rigidbody2D.linearVelocity = Vector2.zero;
+        Destroy(gameObject, 0.75f);
+    }
 }

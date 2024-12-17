@@ -25,11 +25,14 @@ public class WaveManager : MonoBehaviour
     private void OnEnable()
     {
         GameEvents.CharacterDead += playerDead;
+        GameEvents.ResetConfigurations += ConfigurationReset;
     }
 
     private void OnDisable()
     {
         GameEvents.CharacterDead -= playerDead;
+        GameEvents.ResetConfigurations -= ConfigurationReset;
+
     }
     void Update()
     {
@@ -42,6 +45,10 @@ public class WaveManager : MonoBehaviour
         if (duration <= 0)
         {
             EnemiesToSpawn += 2;
+            if (SpawnInterval > 2)
+            {
+                SpawnInterval--;
+            }
             duration = 30;
 
         }
@@ -52,5 +59,11 @@ public class WaveManager : MonoBehaviour
     private void playerDead(Boolean isDead)
     {
         _playerIsDead = isDead;
+    }
+    
+    private void ConfigurationReset(bool reset)
+    {
+        SpawnInterval = 5;
+        EnemiesToSpawn = 4;
     }
 }

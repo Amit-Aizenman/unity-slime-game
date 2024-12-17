@@ -13,11 +13,17 @@ public class CharacterManager : MonoBehaviour
     private void OnEnable()
     {
         GameEvents.OnEnemyHit += EnemyHit;
+        GameEvents.ResetHealth += ResetPlayerHealth;
+        GameEvents.KillPlayer += PlayerDeath;
     }
 
     private void OnDisable()
     {
         GameEvents.OnEnemyHit -= EnemyHit;
+        GameEvents.ResetHealth -= ResetPlayerHealth;
+        GameEvents.KillPlayer -= PlayerDeath;
+
+
     }
     
     private void EnemyHit(int damage)
@@ -31,8 +37,18 @@ public class CharacterManager : MonoBehaviour
         }
         else
         {
-            GameEvents.CharacterDead?.Invoke(true);
-            Destroy(gameObject, 0.75f);
+            PlayerDeath(true);
         }
+    }
+    
+    private void ResetPlayerHealth(Boolean resetHealth)
+    {
+        initialHealth = 100;
+    }
+
+    private void PlayerDeath(Boolean death)
+    {
+        GameEvents.CharacterDead?.Invoke(true);
+        Destroy(gameObject, 0.75f);
     }
 }

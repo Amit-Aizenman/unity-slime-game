@@ -25,6 +25,7 @@ public class EnemyMovement : MonoBehaviour
         else
         {
             Debug.Log("hit something: " + other.name);
+            _rigidbody2D.linearVelocity = -_rigidbody2D.linearVelocity;
         }
         hitsToDeath--;
         animator.SetTrigger("gotHit");

@@ -4,4 +4,5 @@ using System;
 public class GameEvents : MonoBehaviour
 {
     public static Action<int> OnEnemyHit;
+    public static Action<int> waveStarted;
 }

@@ -22,6 +22,10 @@ public class EnemyMovement : MonoBehaviour
         if (other.tag == "Player") {
             GameEvents.OnEnemyHit?.Invoke(damage);
         }
+        else
+        {
+            Debug.Log("hit something");
+        }
         hitsToDeath--;
         animator.SetTrigger("gotHit");
         animator.SetInteger("hits", hitsToDeath);

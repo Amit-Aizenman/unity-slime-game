@@ -22,12 +22,16 @@ public class CharacterManager : MonoBehaviour
     
     private void EnemyHit(int damage)
     {
-        
+        Debug.Log("hittt");
         initialHealth -= damage;
         animator.SetInteger("life", initialHealth );
-        if (initialHealth <= 0)
+        if (initialHealth > 0)
         {
-            Destroy(gameObject, 1.0f);
+            animator.SetTrigger("hit");
+        }
+        else
+        {
+            Destroy(gameObject, 0.75f);
         }
     }
 }

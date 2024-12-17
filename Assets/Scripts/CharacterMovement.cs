@@ -32,4 +32,9 @@ public class CharacterMovement : MonoBehaviour
             _rigidbody2D.AddForce(Vector2.up * (_verticalMovement * Time.fixedDeltaTime * force));
         }
     }
+
+    public Vector2 GetPosition()
+    {
+        return new Vector2(_rigidbody2D.position.x, _rigidbody2D.position.y);
+    }
 }

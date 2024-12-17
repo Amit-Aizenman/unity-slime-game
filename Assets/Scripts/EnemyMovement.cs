@@ -31,6 +31,7 @@ public class EnemyMovement : MonoBehaviour
         animator.SetTrigger("gotHit");
         animator.SetInteger("hits", hitsToDeath);
         if (hitsToDeath == 0) {
+            _rigidbody2D.linearVelocity = Vector2.zero;
             Destroy(gameObject, 0.75f);
         }
     }

@@ -5,7 +5,7 @@ public class EclipseMovementTweener : MonoBehaviour
 {
     private Vector3 _startScale;
     [SerializeField] private float delay;
-    void Start()
+    private void Start()
     {
         _startScale = transform.localScale;
         delay = Random.Range(1f, 1.5f);
@@ -15,12 +15,12 @@ public class EclipseMovementTweener : MonoBehaviour
     }
     private void OnEnable()
     {
-        GameEvents.waveStarted += DoPunch;
+        GameEvents.WaveStarted += DoPunch;
     }
 
     private void OnDisable()
     {
-        GameEvents.waveStarted -= DoPunch;
+        GameEvents.WaveStarted -= DoPunch;
     }
 
     private void DoPunch(int enemies)

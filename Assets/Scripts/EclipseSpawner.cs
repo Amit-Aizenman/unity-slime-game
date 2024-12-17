@@ -3,50 +3,44 @@ using UnityEngine;
 public class EclipseSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemyPrefab;
-    private Vector2 initialPosition;
-
+    private Vector2 _initialPosition;
     private float _timeSinceLastInterval;
+    [SerializeField] private GameObject character;
+    [SerializeField] private float enemyVelocity = 3f;
 
     void Start()
     {
-        initialPosition = transform.position;
+        _initialPosition = transform.position;
     }
 
     private void OnEnable()
     {
-        GameEvents.waveStarted += InitiateWave;
+        GameEvents.WaveStarted += InitiateWave;
     }
 
     private void OnDisable()
     {
-        GameEvents.waveStarted -= InitiateWave;
+        GameEvents.WaveStarted -= InitiateWave;
     }
 
     private void InitiateWave(int enemiesToSpawn)
     {
-        for (int i = 0; i < enemiesToSpawn; i++)
+        if (character is not null)
         {
-            var enemy = Instantiate(enemyPrefab, initialPosition, Quaternion.Euler(0, 0, 0));
-            var enemyRigidBody2d = enemy.gameObject.GetComponent<Rigidbody2D>();
-            if (i == 0)
+            float startingAngle = Vector2.Angle(Vector2.right, new Vector2(character.transform.position.x,
+                                      character.transform.position.y) - _initialPosition) + Random.Range(-15f, 15f);
+            for (int i = 0; i < enemiesToSpawn; i++)
             {
-                enemyRigidBody2d.linearVelocity = Vector2.right;
+                var enemy = Instantiate(enemyPrefab, _initialPosition, Quaternion.Euler(0, 0, 0));
+                var enemyRigidBody2d = enemy.gameObject.GetComponent<Rigidbody2D>();
+                float enemyAngleRadians = (startingAngle + (float)i * 360 / enemiesToSpawn) * Mathf.Deg2Rad;
+                enemyRigidBody2d.linearVelocity = new Vector2(Mathf.Cos(enemyAngleRadians), Mathf.Sin(enemyAngleRadians))
+                                                  * enemyVelocity;
             }
-
-            if (i == 1)
-            {
-                enemyRigidBody2d.linearVelocity = Vector2.left;
-            }
-
-            if (i == 2)
-            {
-                enemyRigidBody2d.linearVelocity = Vector2.down;
-            }
-
-            if (i == 3)
-            {
-                enemyRigidBody2d.linearVelocity = Vector2.up;
-            }
+        }
+        else
+        {
+            Debug.LogError("Character is not assigned in EclipseSpawner!");
         }
     }
 }

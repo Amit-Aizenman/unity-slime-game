@@ -31,7 +31,7 @@ public class CharacterManager : MonoBehaviour
         }
         else
         {
-            GameEvents.characterDead?.Invoke(true);
+            GameEvents.CharacterDead?.Invoke(true);
             Destroy(gameObject, 0.75f);
         }
     }

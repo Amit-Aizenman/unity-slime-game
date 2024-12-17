@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
-    [SerializeField] public static int spawnInterval = 5; 
-    [SerializeField] public static int enemiesToSpawn = 4;
-    [SerializeField] public static int duration = 60;
+    public static int SpawnInterval = 5; 
+    public static int EnemiesToSpawn = 4;
+    [SerializeField] private float duration = 30;
     public static WaveManager Instance;
     private Boolean _playerIsDead = false;
     private float _timeSinceLastInterval;
@@ -25,28 +25,30 @@ public class WaveManager : MonoBehaviour
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
     private void OnEnable()
     {
-        GameEvents.characterDead += playerDead;
+        GameEvents.CharacterDead += playerDead;
     }
 
     private void OnDisable()
     {
-        GameEvents.characterDead -= playerDead;
+        GameEvents.CharacterDead -= playerDead;
     }
     void Update()
     {
-        if (_timeSinceLastInterval > spawnInterval && _playerIsDead == false)
+        if (_timeSinceLastInterval > SpawnInterval && _playerIsDead == false)
         {
-            GameEvents.waveStarted?.Invoke(enemiesToSpawn);
+            GameEvents.WaveStarted?.Invoke(EnemiesToSpawn);
             _timeSinceLastInterval = 0;
         }
+        
+        if (duration <= 0)
+        {
+            EnemiesToSpawn += 2;
+            duration = 30;
+
+        }
+        duration -= Time.deltaTime;
         _timeSinceLastInterval += Time.deltaTime;
     }
 

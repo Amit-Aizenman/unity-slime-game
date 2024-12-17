@@ -28,7 +28,6 @@ public class CharacterManager : MonoBehaviour
     
     private void EnemyHit(int damage)
     {
-        Debug.Log("hittt");
         initialHealth -= damage;
         animator.SetInteger("life", initialHealth );
         if (initialHealth > 0)

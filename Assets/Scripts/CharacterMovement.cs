@@ -11,6 +11,17 @@ public class CharacterMovement : MonoBehaviour
     private float _horizontalMovement;
     private float _verticalMovement;
     
+    
+    private void OnEnable()
+    {
+        GameEvents.CharacterDead += FreezeCharacter;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.CharacterDead -= FreezeCharacter;
+    }
+
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -31,5 +42,11 @@ public class CharacterMovement : MonoBehaviour
             _rigidbody2D.AddForce(Vector2.right * (_horizontalMovement * Time.fixedDeltaTime * force));
             _rigidbody2D.AddForce(Vector2.up * (_verticalMovement * Time.fixedDeltaTime * force));
         }
+    }
+    
+    private void FreezeCharacter(bool obj)
+    {
+        force = 0;
+        _rigidbody2D.linearVelocity = Vector2.zero;
     }
 }

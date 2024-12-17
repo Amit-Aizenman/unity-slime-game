@@ -48,6 +48,8 @@ public class CharacterManager : MonoBehaviour
 
     private void PlayerDeath(Boolean death)
     {
+        initialHealth = 0;
+        animator.SetInteger("life", initialHealth );
         GameEvents.CharacterDead?.Invoke(true);
         Destroy(gameObject, 0.75f);
     }

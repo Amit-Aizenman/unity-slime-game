@@ -13,4 +13,18 @@ public class EclipseMovementTweener : MonoBehaviour
         transform.DOScale(_startScale, 1.5f).SetDelay(delay);
         transform.DORotate(new Vector3(0,0,1080f),1.5f, RotateMode.FastBeyond360).SetDelay(delay);
     }
+    private void OnEnable()
+    {
+        GameEvents.waveStarted += DoPunch;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.waveStarted -= DoPunch;
+    }
+
+    private void DoPunch(int enemies)
+    {
+        transform.DOPunchScale(new Vector3(1, 1, 1), 0.5f);
+    }
 }

@@ -24,7 +24,7 @@ public class EnemyMovement : MonoBehaviour
         }
         else
         {
-            Debug.Log("hit something");
+            Debug.Log("hit something: " + other.name);
         }
         hitsToDeath--;
         animator.SetTrigger("gotHit");

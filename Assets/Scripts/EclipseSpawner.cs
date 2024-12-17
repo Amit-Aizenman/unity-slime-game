@@ -19,11 +19,7 @@ public class EclipseSpawner : MonoBehaviour
 
     private void OnDisable()
     {
-        GameEvents.OnEnemyHit -= InitiateWave;
-    }
-
-    void Update()
-    {
+        GameEvents.waveStarted -= InitiateWave;
     }
 
     private void InitiateWave(int enemiesToSpawn)

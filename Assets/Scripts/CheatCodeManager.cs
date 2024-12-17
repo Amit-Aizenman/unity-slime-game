@@ -36,7 +36,7 @@ public class CheatCodeManager : MonoBehaviour
             // 3 - destroy all enemies
         {
             Debug.Log("Destroying all enemies");
-            GameEvents.DestroyEnemies?.Invoke(true);
+            GameEvents.DestroyEnemiesReset?.Invoke(true);
         }
         
         if (Input.GetKeyDown(KeyCode.Alpha4))

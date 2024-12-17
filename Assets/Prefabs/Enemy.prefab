@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3391337547134594000}
   - component: {fileID: 8926277482770949904}
   - component: {fileID: 1369577216450291427}
+  - component: {fileID: 3391147324383856328}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -127,7 +128,7 @@ Animator:
   m_GameObject: {fileID: 3093056061570879233}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 64ca67cfbc1c13a4497ac2736947b74f, type: 2}
+  m_Controller: {fileID: 9100000, guid: b04f28a714d288d489e46529b401e8d9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -194,3 +195,19 @@ PolygonCollider2D:
       - {x: 0.114999995, y: 0.07}
       - {x: 0.065, y: 0.14999999}
   m_UseDelaunayMesh: 0
+--- !u!114 &3391147324383856328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093056061570879233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2146b7bf76779d54f8a7ba1e94896f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 30
+  hitsToDeath: 2
+  animator: {fileID: 0}
+  _rigidbody2D: {fileID: 0}

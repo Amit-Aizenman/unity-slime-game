@@ -6,7 +6,7 @@ public class CharacterMovement : MonoBehaviour
 {
     [SerializeField] private int maxSpeed = 5;
     [SerializeField] private float force = 1000;
-    private Rigidbody2D _rigidbody2D;
+    [SerializeField] Rigidbody2D _rigidbody2D;
     private float _horizontalMovement;
     private float _verticalMovement;
     [SerializeField] Animator animator;

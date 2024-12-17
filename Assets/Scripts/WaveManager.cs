@@ -9,9 +9,6 @@ public class WaveManager : MonoBehaviour
     public static WaveManager Instance;
     private Boolean _playerIsDead = false;
     private float _timeSinceLastInterval;
-
-
-    // Awake happens when the object is created, before Start
     private void Awake()
     {
         if (Instance == null)

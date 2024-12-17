@@ -6,10 +6,10 @@ public class CharacterMovement : MonoBehaviour
 {
     [SerializeField] private int maxSpeed = 5;
     [SerializeField] private float force = 1000;
-    [SerializeField] Rigidbody2D _rigidbody2D;
+    [SerializeField] Animator animator;
+    private Rigidbody2D _rigidbody2D;
     private float _horizontalMovement;
     private float _verticalMovement;
-    [SerializeField] Animator animator;
     
     void Start()
     {
@@ -31,10 +31,5 @@ public class CharacterMovement : MonoBehaviour
             _rigidbody2D.AddForce(Vector2.right * (_horizontalMovement * Time.fixedDeltaTime * force));
             _rigidbody2D.AddForce(Vector2.up * (_verticalMovement * Time.fixedDeltaTime * force));
         }
-    }
-
-    public Vector2 GetPosition()
-    {
-        return new Vector2(_rigidbody2D.position.x, _rigidbody2D.position.y);
     }
 }

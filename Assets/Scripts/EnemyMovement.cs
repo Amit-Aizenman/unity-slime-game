@@ -13,18 +13,13 @@ public class EnemyMovement : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
-    {
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player") {
+        if (other.CompareTag("Player")) {
             GameEvents.OnEnemyHit?.Invoke(damage);
         }
         else
         {
-            Debug.Log("hit something: " + other.name);
             _rigidbody2D.linearVelocity = -_rigidbody2D.linearVelocity;
         }
         hitsToDeath--;

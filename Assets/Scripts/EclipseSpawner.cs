@@ -11,6 +11,7 @@ public class EclipseSpawner : MonoBehaviour
     void Start()
     {
         _initialPosition = transform.position;
+        character = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void OnEnable()

@@ -1,11 +1,13 @@
 Slime Survival
 ============
 
-
-In this project, I developed a 2D survival game where enemies spawn in waves, and the player's goal is to survive for as long as possible. 
+In this project, I developed a 2D survival game where enemies spawn in waves, and the player's goal is to survive for as long as possible.  
 This project was part of my Game Development minor, which is a program jointly offered by Bezalel Academy of Art and Design and the Hebrew University of Jerusalem.
 
-![slime-survival-1](https://github.com/user-attachments/assets/61f1c716-33ab-4fbf-9960-6a39f9c227a6) ![slime-survival-2](https://github.com/user-attachments/assets/c8f3b04c-98e9-4048-87fe-4ecfd2ebd735)
+<p align="center">
+  <img src="https://github.com/Amit-Aizenman/unity-slime-game/blob/main/game-demo-1.gif" width="300"/>
+  <img src="https://github.com/Amit-Aizenman/unity-slime-game/blob/main/game-demo-2.gif" width="320"/>
+</p>
 
 ---
 
@@ -28,3 +30,5 @@ Clone this repo to your desktop and open 'Run' directory. Then click on 'TestPro
 - 4 - instant player death
 
 ---
+
+Have Fun! 

@@ -12,14 +12,14 @@ This project was part of my Game Development minor, which is a program jointly o
 ---
 
 ## Key Learnings
-- Work in a 2D project, using Sprite Renderers and 2D components such as RigidBody2D
-- Create and instantiate prefabs
-- Use events to communicate between different systems in the game.
-- Animate objects using Unity’s Animator and the DOTween package for smooth animations and transitions.
+- Worked on a 2D project, using Sprite Renderers and 2D components like RigidBody2D.
+- Created and instantiated prefabs to enhance gameplay elements.
+- Utilized events to enable communication between different systems within the game.
+- Animated objects with Unity’s Animator and the DOTween package for smooth animations and transitions.
 
 --- 
 ## Setup
-Clone this repo to your desktop and open 'Run' directory. Then click on 'TestProject2D.exe' to play the game.
+Clone this repo to your desktop and navigate to the 'Run' directory. Then click on 'TestProject2D.exe' to play the game.
 
 ---
 
@@ -31,4 +31,4 @@ Clone this repo to your desktop and open 'Run' directory. Then click on 'TestPro
 
 ---
 
-Have Fun! 
+Have fun surviving!
